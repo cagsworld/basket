@@ -1954,7 +1954,7 @@ void BNPView::grabScreenshot(bool global)
         m_colorPickWasShown = false;
 
     currentBasket()->saveInsertionData();
-    usleep(delay * 1000);
+    //usleep(delay * 1000);
     m_regionGrabber = new RegionGrabber;
     connect(m_regionGrabber, SIGNAL(regionGrabbed(const QPixmap&)), this, SLOT(screenshotGrabbed(const QPixmap&)));
 }

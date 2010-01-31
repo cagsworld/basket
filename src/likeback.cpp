@@ -48,7 +48,7 @@
 #include <QValidator>
 #include <QAction>
 
-#include <pwd.h>
+// #include <pwd.h>
 
 #include <KDE/KGlobal>
 

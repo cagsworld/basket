@@ -5216,7 +5216,7 @@ bool BasketView::saveToFile(const QString& fullPath, const QByteArray& array, un
             static const uint sleepDelay = 50; // ms
             for (uint i = 0; i < retryDelay / sleepDelay; ++i) {
                 kapp->processEvents();
-                usleep(sleepDelay * 1000); // usec
+               // usleep(sleepDelay * 1000); // usec
             }
             // Double the retry delay, but don't go over the max.
             retryDelay = qMin(maxDelay, retryDelay * 2); // ms

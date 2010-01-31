@@ -82,6 +82,7 @@ class ExtendedTextDrag : public QDrag
 {
     Q_OBJECT
 public:
+    ExtendedTextDrag(QWidget * source);
     static bool decode(const QMimeData *e, QString &str);
     static bool decode(const QMimeData *e, QString &str, QString &subtype);
 };
